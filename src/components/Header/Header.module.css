@@ -1,0 +1,49 @@
+.header {
+    height: 8%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    /* background-color: #292e39; */
+    background-color: #282c34;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.818);
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: 0%;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    /* font-size: calc(10px + 2vmin); */
+}
+
+.menu2 {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 40%;
+    margin-left: 0%;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.icon1{
+    display: flex;
+    position: absolute;
+    right: 8%;
+}
+
+.icon2{
+    display: flex;
+    position: absolute;
+    right: 18%;
+}

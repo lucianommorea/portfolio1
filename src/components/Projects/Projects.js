@@ -13,7 +13,7 @@ function Projects () {
             </div>
             <div className={style.cards}>
                 <Project />
-
+                <Project />
             </div>
             
         </div>

@@ -1,19 +1,20 @@
 .all {
     min-height: 100vh;
     background-color: #292e39;
+    /* background-color: #042c54; */
+    background-color: #0a192f;
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.818);
     display: flex;
     flex-direction: column;
+    gap: 20%;
 }
 
 .top {
     display: flex;
-    margin-top: none;
     font-size: x-large;
-    height: 20%;
+    height: 10%;
     position: absolute;
-    /* max-height: 20%; */
     text-align: center;
     width: 100%;
     /* border: 1px solid white; */
@@ -24,4 +25,14 @@
     font-size: calc(15px + 2vmin);
     /* font-size: xx-large; */
     margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 6%;
+    gap: 5%;
+    width: 100%;
+
 }

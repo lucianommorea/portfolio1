@@ -6,7 +6,7 @@ function About2 () {
     <>
         <div className={style.all}>
             <div className={style.top}>
-                <span className={style.title}> Acerca de mi </span>
+                <span className={style.title}> <span className={style.num}> 01. </span> Acerca de mi </span>
             </div>
 
             <div className={style.bottom}>

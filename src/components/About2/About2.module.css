@@ -1,9 +1,9 @@
 .all {
     min-height: 100vh;
     /* background-color: #292e39; */
-    background-color: #0e3761;
-    background-color: #0a192f;
-    font-family: 'Poppins', sans-serif;
+    /* background-color: #0a192f; */
+    background-color: #0b182c;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.818);
     display: flex;
     flex-direction: column;
@@ -15,7 +15,6 @@
     font-size: x-large;
     height: 20%;
     position: absolute;
-    /* max-height: 20%; */
     text-align: center;
     width: 100%;
     /* border: 1px solid white; */
@@ -23,15 +22,14 @@
 
 .num {
     color: #1d64ab;
+    font-size: calc(10px + 2vmin);
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: calc(15px + 2vmin);
-    /* font-size: xx-large; */
     margin: auto;
-    color:rgba(30, 89, 167, 0.574);
-    color:  #11365b;
+    color: #9bb6d1;
 }
 
 .bottom {
@@ -41,14 +39,6 @@
     height: 80%;
 }
 
-.right {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border: 1px solid white;
-    width: 100%;
-}
-
 .left {
     display: flex;
     flex-direction: column;
@@ -56,10 +46,47 @@
     width: 100%;
 }
 
+.cuadro {
+    /* width: 60%; */
+    margin: auto;
+    margin-right: 0%;
+    margin-left: 35%;
+    text-align: left;
+    font-size: calc(6px + 2vmin);
+    color: #9bb6d1;
+}
+
+.photo {
+    width: 80%;
+    min-width: 250px;
+    /* border: 5px inset #0c3763; */
+    border: 5px outset;
+    border-color: #1d64ab #6d8eb0 #6d8eb0 #1d64ab;
+}
+
+.cuadro2 {
+    /* width: 60%; */
+    margin: auto;
+    margin-left: 0%;
+    margin-right: 35%;
+    text-align: left;
+    font-size: calc(6px + 2vmin);
+    color: #9bb6d1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 1px solid white; */
+    width: 100%;
+}
+
+/* 
 .btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.818);
     background-color: transparent;
     border: 1px solid rgba(30, 89, 167, 0.574);
     font-size: large;
-}
+} */

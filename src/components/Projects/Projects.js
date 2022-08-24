@@ -9,13 +9,12 @@ function Projects () {
     <>
         <div className={style.all}>
             <div className={style.top}>
-                <span className={style.title}> Proyectos </span>
+                <span className={style.title}> <span className={style.num}> 02. </span> Proyectos </span>
             </div>
             <div className={style.cards}>
                 <Project />
                 <Project />
-            </div>
-            
+            </div>     
         </div>
     </>
     )

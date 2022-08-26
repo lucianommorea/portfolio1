@@ -44,14 +44,13 @@ const FormContact = () => {
               onChange={handleChange}
             />
           </div>
-            <button
-                type="submit"
-                className={style.btn}>
-                <a href={`mailto:lucianommorea@gmail.com?subject=${input.title}&body=${input.text}`} target="_blank" rel="noreferrer" className={style.btn1}>
-                Enviar mensaje
-                </a>
-            </button>
-
+            <a href={`mailto:lucianommorea@gmail.com?subject=${input.title}&body=${input.text}`} target="_blank" rel="noreferrer" className={style.btn1}>
+              <button
+                  type="submit"
+                  className={style.btn}>
+                  Enviar mensaje
+              </button>
+            </a>
         </form>
       </div>
     </div>

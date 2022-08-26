@@ -75,6 +75,8 @@
 .photo {
     border-radius: 4%;
     border: #0a192f solid 2px;
+    width: 310px;
+    height: 180px;
 }
 
 .photo:hover {
@@ -153,4 +155,12 @@ a:visited:hover {
         gap: 20px;
     }
 
+}
+
+@media screen and (max-width: 400px){
+
+    .photo {
+        width: 280px;
+        height: 175px;
+    }
 }

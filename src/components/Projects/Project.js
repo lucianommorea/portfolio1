@@ -19,7 +19,7 @@ function Project ({name, video, description, link, github, photo, id}) {
           ease: [0, 0.71, 0.2, 1.01]
         }}>
             <motion.div className={style.video} layoutId={id} onClick={() => setSelectedId(id)}>
-                <img src={photo} width="310" height="180" alt={name} className={style.photo}/>
+                <img src={photo} alt={name} className={style.photo}/>
             </motion.div>
             <div className={style.description}>
                 <div className=''>

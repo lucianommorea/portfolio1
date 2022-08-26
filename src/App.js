@@ -7,10 +7,14 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import { motion, useScroll } from "framer-motion";
 import Particle from './components/Particle';
+import { useRef } from 'react'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   const { scrollYProgress } = useScroll();
-
+  const about2 = useRef(null)
+  const projects = useRef(null)
+  const technologies = useRef(null)
 
   return (
     <div className="App">
@@ -19,11 +23,12 @@ function App() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <Header />
+      <ScrollToTop />
+      <Header about2={about2} projects={projects} technologies={technologies} />
       <About />
-      <About2 />
-      <Projects />
-      <Skills />
+      <About2 about2={about2} />
+      <Projects projects={projects} />
+      <Skills technologies={technologies} />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 .all {
     min-height: 100vh;
     /* background-color: #292e39; */
-    background-color: #0e3761;
-    background-color: #0a192f;
+    background-color: #0b182c;
+    /* background-color: #0a192f; */
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.818);
     display: flex;

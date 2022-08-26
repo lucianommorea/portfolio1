@@ -12,9 +12,12 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-left: 10%;
     gap: 5vh;
     font-size: large;
     width: 60%;
+    /* border: 1px solid white; */
+    z-index: 1;
 }
 
 .right {
@@ -29,6 +32,27 @@
     font-size: calc(8px + 8vmin);
 }
 
+h1 {
+    margin-bottom: 0%;
+}
+
+.name span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #0a192f;
+    animation: maquina 10s alternate steps(20);
+}
+
+@keyframes maquina {
+    from {
+        width: 50%
+    }
+    to {
+        width: 0;
+    }
+}
+
 .full {
     color: #9bb6d1;
     font-size: calc(6px + 6vmin);
@@ -40,20 +64,22 @@
     border-radius: 4px;
     color: #1d64ab;
     color: #9bb6d1;
-    width: 110px;
-    height: 40px;
-    font-family: 'Montserrat', sans-serif;
+    /* width: 110px;
+    height: 40px; */
+    padding: 8px 20px;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     background-origin: left;
-    transition: background-color 2s ease-in-out;;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    background: linear-gradient(to right, #9bb6d1 50%, transparent 50%) no-repeat right / 200%;
+    transition: all 0.3 ease-out;
 }
 
 .btn:hover {
-    background-color: #9bb6d1;
-    border: #1d64ab solid 2px;
+    background-position: left;
     color: #0a192f;
     cursor: pointer;
-    transition-timing-function: ease-out;
 }
 
 .photo {
@@ -61,6 +87,6 @@
     border-radius: 4px;
     width: 200px;
     height: 200px;
-    box-shadow: 2px 10px 10px  #282c34;
+    box-shadow: 2px 10px 10px #282c34;
     z-index: 2;
 }

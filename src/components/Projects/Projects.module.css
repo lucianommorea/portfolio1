@@ -1,6 +1,6 @@
 .all {
     min-height: 100vh;
-    background-color: #292e39;
+    /* background-color: #292e39; */
     /* background-color: #042c54; */
     background-color: #0a192f;
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,7 @@
 .top {
     display: flex;
     font-size: x-large;
-    height: 10%;
+    height: 15%;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 6%;
+    margin-top: 10%;
     gap: 5%;
     width: 100%;
 

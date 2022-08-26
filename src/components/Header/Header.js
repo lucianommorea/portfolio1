@@ -6,16 +6,24 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const github = 'https://github.com/lucianommorea'
 const linkedIn = 'https://www.linkedin.com/in/luciano-morea/'
 
-function Header() {
+function Header({technologies, projects, about2}) {
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
   <>
     <header>
       <div className={style.header}>
         <ul className={style.menu}>
-          <li> Inicio </li>
-          <li> Acerca de mí </li>
-          <li> Proyectos </li>
-          <li> Skills </li>
+          {/* <li> Inicio </li> */}
+          <li onClick={() => scrollToSection(about2)}> Acerca de mí </li>
+          <li onClick={() => scrollToSection(projects)}> Proyectos </li>
+          <li onClick={() => scrollToSection(technologies)}> Skills </li>
           <li> Contacto </li>
         </ul>
         <div className={style.menu2}>

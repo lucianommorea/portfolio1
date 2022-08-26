@@ -13,14 +13,14 @@ import {ReactComponent as SQLServerLogo} from '../../images/microsoft-sql-server
 import {ReactComponent as PowerBILogo} from '../../images/power-bi.svg'
 import { motion, useTime, useTransform } from "framer-motion";
 
-function Skills () {
+function Skills({technologies}) {
 
     const time = useTime();
     const rotate = useTransform(time, [0, 20000], [0, -1], { clamp: true });
 
     return (
     <>
-        <div className={style.all}>
+        <div ref={technologies} className={style.all}>
             <div className={style.top}>
                 <span className={style.title}> <span className={style.num}> 03. </span> Tecnologías </span>
             </div>

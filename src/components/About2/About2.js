@@ -2,10 +2,10 @@ import React from 'react'
 import style from './About2.module.css'
 import photo from '../../images/programador.jpg'
 
-function About2 () {
+function About2 ({about2}) {
     return (
     <>
-        <div className={style.all}>
+        <div ref={about2} className={style.all}>
             <div className={style.top}>
                 <span className={style.title}> <span className={style.num}> 01. </span> Acerca de mi </span>
             </div>

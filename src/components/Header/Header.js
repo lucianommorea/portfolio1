@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const github = 'https://github.com/lucianommorea'
 const linkedIn = 'https://www.linkedin.com/in/luciano-morea/'
 
-function Header({technologies, projects, about2}) {
+function Header({technologies, projects, about2, contact}) {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -24,7 +24,7 @@ function Header({technologies, projects, about2}) {
           <li onClick={() => scrollToSection(about2)}> Acerca de mí </li>
           <li onClick={() => scrollToSection(projects)}> Proyectos </li>
           <li onClick={() => scrollToSection(technologies)}> Skills </li>
-          <li> Contacto </li>
+          <li onClick={() => scrollToSection(contact)}> Contacto </li>
         </ul>
         <div className={style.menu2}>
             <div className={style.icon1}>

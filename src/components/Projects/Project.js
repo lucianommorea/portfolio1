@@ -1,12 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import style from './Project.module.css'
 import videoCountries from '../../images/CountriesPortfolio2.mp4'
-import { motion} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
 
-// const github = 'https://github.com/lucianommorea/PICountries'
-// const link = 'https://pic-ountries.vercel.app/'
+function Project ({name, video, description, link, github, photo, id}) {
 
-function Project ({name, video, description, link, github, photo}) {
+    const [selectedId, setSelectedId] = useState(null)
+    // let id = 1;
 
     return (
     <>
@@ -18,9 +18,9 @@ function Project ({name, video, description, link, github, photo}) {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01]
         }}>
-            <div className={style.video}>
+            <motion.div className={style.video} layoutId={id} onClick={() => setSelectedId(id)}>
                 <img src={photo} width="310" height="180" alt={name} className={style.photo}/>
-            </div>
+            </motion.div>
             <div className={style.description}>
                 <div className=''>
                     <h2>
@@ -49,6 +49,26 @@ function Project ({name, video, description, link, github, photo}) {
             </div>
 
         </motion.div>
+
+        <AnimatePresence>
+            {selectedId && (
+                <motion.div layoutId={selectedId} className={style.motion}
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                // exit={{ opacity: 0 }}
+                >
+                    <div className={style.background} onClick={() => setSelectedId(null)} >
+                        {/* <motion.button onClick={() => setSelectedId(null)} >
+                            X
+                        </motion.button> */}
+                        <iframe width="560" height="315" src={video}
+                                title="YouTube video player" frameborder="0" className={style.youtube} 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </motion.div>
+            )}
+        </AnimatePresence>
 
     </>
     )

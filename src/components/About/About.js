@@ -40,11 +40,10 @@ function About () {
                   ease: [0, 0.71, 0.2, 1.01]
                 }}>
                     <a href={pdf} target="_blank" rel="noopener noreferrer" download="CV_MOREA_Luciano.pdf"> 
-                        <button className={style.btn}>
+                        <button className={style.btn} >
                             Descargar CV
                         </button>
                     </a>    
-
                 </motion.div>
             </div>
             <motion.div className={style.right}

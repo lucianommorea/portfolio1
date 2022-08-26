@@ -5,10 +5,10 @@
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid #1d64ab;
     background-color: #1d64ab;
     color: #9bb6d1;
-    z-index: 2;
+    z-index: 20;
 }
 
 .btnTop:hover {

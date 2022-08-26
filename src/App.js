@@ -9,12 +9,15 @@ import { motion, useScroll } from "framer-motion";
 import Particle from './components/Particle';
 import { useRef } from 'react'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Contacto from './components/Contacto/Contacto';
+
 
 function App() {
   const { scrollYProgress } = useScroll();
   const about2 = useRef(null)
   const projects = useRef(null)
   const technologies = useRef(null)
+  const contact = useRef(null)
 
   return (
     <div className="App">
@@ -24,11 +27,12 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       <ScrollToTop />
-      <Header about2={about2} projects={projects} technologies={technologies} />
+      <Header about2={about2} projects={projects} technologies={technologies} contact={contact} />
       <About />
       <About2 about2={about2} />
       <Projects projects={projects} />
       <Skills technologies={technologies} />
+      <Contacto contact={contact} />
     </div>
   );
 }

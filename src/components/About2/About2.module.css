@@ -82,11 +82,42 @@
     width: 100%;
 }
 
-/* 
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(255, 255, 255, 0.818);
-    background-color: transparent;
-    border: 1px solid rgba(30, 89, 167, 0.574);
-    font-size: large;
-} */
+
+@media screen and (max-width: 740px){
+    .all {
+        display: flex;
+        /* flex-direction: column-reverse; */
+    }
+
+    .bottom{
+        flex-direction: column;
+        margin:auto;
+    }
+    
+    .left {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .cuadro {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column;
+        /* margin: auto;  */
+        margin-top: 30px;
+        width: 80%;
+    }
+    .cuadro2 {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        font-size: calc(6px + 2vmin);
+        color: #9bb6d1;
+    }
+
+}

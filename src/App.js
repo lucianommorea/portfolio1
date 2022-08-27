@@ -14,10 +14,11 @@ import Contacto from './components/Contacto/Contacto';
 
 function App() {
   const { scrollYProgress } = useScroll();
-  const about2 = useRef(null)
-  const projects = useRef(null)
-  const technologies = useRef(null)
-  const contact = useRef(null)
+  const about2 = useRef(null);
+  const projects = useRef(null);
+  const technologies = useRef(null);
+  const contact = useRef(null);
+  const home = useRef(null);
 
   return (
     <div className="App">
@@ -27,8 +28,8 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       <ScrollToTop />
-      <Header about2={about2} projects={projects} technologies={technologies} contact={contact} />
-      <About />
+      <Header home={home} about2={about2} projects={projects} technologies={technologies} contact={contact} />
+      <About home={home}/>
       <About2 about2={about2} />
       <Projects projects={projects} />
       <Skills technologies={technologies} />

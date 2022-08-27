@@ -4,10 +4,10 @@ import photo from '../../images/2.jpg';
 import { motion} from "framer-motion";
 import pdf from '../../images/CV_MOREA_Luciano.pdf'
 
-function About () {
+function About ({home}) {
     return (
     <>
-        <div className={style.all}>
+        <div ref={home} className={style.all}>
             <div className={style.left}>
                 <motion.div 
                 initial={{ opacity: 0, scale: 0.5 }}

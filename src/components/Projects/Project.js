@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import style from './Project.module.css'
-import videoCountries from '../../images/CountriesPortfolio2.mp4'
 import { motion, AnimatePresence } from "framer-motion"
 
 function Project ({name, video, description, link, github, photo, id}) {
@@ -61,7 +60,7 @@ function Project ({name, video, description, link, github, photo, id}) {
                         {/* <motion.button onClick={() => setSelectedId(null)} >
                             X
                         </motion.button> */}
-                        <iframe width="560" height="315" src={video}
+                        <iframe  src={video}
                                 title="YouTube video player" frameborder="0" className={style.youtube} 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>

@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './Projects.module.css';
 import Project from './Project';
-import videoCountries from '../../images/CountriesPortfolio2.mp4'
 import photoCountries from '../../images/Countries.png'
 import photoCodebug from '../../images/Codebug_image.png'
 

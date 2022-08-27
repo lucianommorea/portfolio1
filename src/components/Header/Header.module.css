@@ -73,3 +73,15 @@ a:visited:hover {
     cursor: pointer;
     color: #9bb6d1;
 }
+
+@media screen and (max-width: 800px){
+    .icon1{
+        right: 10%;
+    }
+    
+    .icon2{
+        right: 25%;
+    }
+}
+
+

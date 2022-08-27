@@ -110,6 +110,8 @@ a:visited:hover {
 .youtube {
     margin-top: 10%;
     margin-left: 5%;
+    width: 560px;
+    height: 315px;
     /* opacity:initial; */
     /* background:none transparent; */
     
@@ -157,10 +159,62 @@ a:visited:hover {
 
 }
 
+@media screen and (max-width: 560px){
+
+    .youtube {
+        margin-top: 10%;
+        margin-left: auto;
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 520px){
+
+    .youtube {
+        margin-top: 50%;
+        margin-left: auto;
+        width: 450px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+    .youtube {
+        margin-top: 50%;
+        margin-left: auto;
+        width: 400px;
+        height: 265px;
+    }
+}
+
 @media screen and (max-width: 400px){
 
     .photo {
         width: 280px;
         height: 175px;
+    }
+
+    .youtube {
+        margin-top: 50%;
+        margin-left: auto;
+        width: 370px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 361px){
+
+    .photo {
+        width: 280px;
+        height: 175px;
+    }
+
+    .youtube {
+        margin-top: 50%;
+        margin-left: auto;
+        width: 340px;
+        height: 250px;
     }
 }

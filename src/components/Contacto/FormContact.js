@@ -15,6 +15,11 @@ const FormContact = () => {
     });
   }
 
+  function handleClickBtn(e) {
+    e.preventDefault();
+    window.location = `mailto:lucianommorea@gmail.com?subject=${input.title}&body=${input.text}`
+  }
+
 //   const textAlerta = "Mensaje enviado";
 
   return (
@@ -44,13 +49,14 @@ const FormContact = () => {
               onChange={handleChange}
             />
           </div>
-            <a href={`mailto:lucianommorea@gmail.com?subject=${input.title}&body=${input.text}`} target="_blank" rel="noreferrer" className={style.btn1}>
+            {/* <a href={`mailto:lucianommorea@gmail.com?subject=${input.title}&body=${input.text}`} target="_blank" rel="noreferrer" className={style.btn1}> */}
               <button
                   type="submit"
-                  className={style.btn}>
+                  className={style.btn}
+                  onClick={handleClickBtn}>
                   Enviar mensaje
               </button>
-            </a>
+            {/* </a> */}
         </form>
       </div>
     </div>

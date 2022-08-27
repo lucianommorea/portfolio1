@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import style from './ScrollToTop.module.css'
-import { TbArrowBigTop } from 'react-icons/tb';
 import { BsArrowUpShort } from 'react-icons/bs';
  
 const ScrollToTop = () => {

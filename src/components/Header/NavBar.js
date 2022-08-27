@@ -118,6 +118,6 @@ const BgDiv = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 570%;
+    height: 100vh;
   }
 `

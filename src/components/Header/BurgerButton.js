@@ -27,6 +27,10 @@ const Burguer = styled.div`
   cursor: pointer;
   display: inline-block;
 }
+
+.open{
+  background-color: #0c2852;
+}
 .nav-icon-5 span{
   background-color:#9bb6d1;
   position: absolute;
@@ -49,15 +53,15 @@ const Burguer = styled.div`
   bottom:0px;
   left: 0px;
 }
-.nav-icon-5:not(.open):hover span:nth-child(1){
+/* .nav-icon-5:not(.open):hover span:nth-child(1){
   transform: rotate(-3deg) scaleY(1.1);
 }
 .nav-icon-5:not(.open):hover span:nth-child(2){
   transform: rotate(3deg) scaleY(1.1);
-}
-.nav-icon-5:not(.open):hover span:nth-child(3){
+} */
+/* .nav-icon-5:not(.open):hover span:nth-child(3){
   transform: rotate(-4deg) scaleY(1.1);
-}
+} */
 .nav-icon-5.open span:nth-child(1){
   transform: rotate(45deg);
   top: 13px;

@@ -24,7 +24,7 @@ function About2 ({about2}) {
                             para crecer profesional y personalmente. Me gustan los desafíos y la resolución de problemas, así
                             como también el trabajo en equipo, siempre con el objetivo de alcanzar los resultados planteados de
                             forma eficiente. Finalice el Bootcamp en SoyHenry, y continuo mi aprendizaje de forma autodidacta. 
-                            Si queres saber más te invito a escribirme en la seccion de contacto.
+                            Si queres saber más sobre mí, te invito a escribirme en la seccion de contacto.
                         </p>
                     </div>
                 </div>

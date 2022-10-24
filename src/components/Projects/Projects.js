@@ -1,8 +1,9 @@
 import React from 'react';
 import style from './Projects.module.css';
 import Project from './Project';
-import photoCountries from '../../images/Countries.png'
-import photoCodebug from '../../images/Codebug_image.png'
+import photoCountries from '../../images/Countries.png';
+import photoCodebug from '../../images/Codebug_image.png';
+import photoProde from '../../images/Prode.png';
 
 const project = {
     Codebug: {  id: 2,
@@ -20,7 +21,17 @@ const project = {
                     github: 'https://github.com/lucianommorea/PICountries',
                     link: 'https://pic-ountries.vercel.app/',
                     video: "https://www.youtube.com/embed/o8Z07rf5hlg?rel=0" 
-    }
+    },
+    Prode: {    id: 1,
+                name: 'Prode Mundial',
+                photo: photoProde,
+                description: `Diseño y desarrollo de una SPA para simular resultados del Mundial 2022, y poder crear Pronósticos tanto 
+                de resultados de partidos como de Posiciones, que obtendrán puntajes para un ranking en base a los resultados que se darán 
+                en el Mundial. Posee panel de configuración y página persona por usuario.`,
+                github: 'https://github.com/lucianommorea/prodeMundial',
+                link: 'https://prodeqatar.vercel.app/',
+                video: "https://www.youtube.com/embed/o8Z07rf5hlg?rel=0" 
+}
 }
 
 function Projects ({projects}) {
@@ -47,6 +58,13 @@ function Projects ({projects}) {
                             link={project.Countries.link}
                             github={project.Countries.github}
                             id={project.Countries.id} />
+                <Project    name={project.Prode.name}
+                            video={project.Prode.video}
+                            photo={project.Prode.photo}
+                            description={project.Prode.description}
+                            link={project.Prode.link}
+                            github={project.Prode.github}
+                            id={project.Prode.id} />
             </div>     
         </div>
     </>
